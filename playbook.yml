@@ -1,0 +1,8 @@
+---
+- name: Install WordPress, MySQL, and Nginx
+  hosts: db
+  become: true
+  roles:
+    - common
+    - wordpress
+
